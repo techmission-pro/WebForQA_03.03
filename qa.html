@@ -416,10 +416,12 @@
                 <div class="calc">
                
 				<input type="text" name="num1" class="calc-input"/>
-				<button type="button" class="calc-calculate">+</button>
-				<button type="button" class="calc-calculate">-</button>
-				<button type="button" class="calc-calculate">*</button>
-				<button type="button" class="calc-calculate">/</button>
+				<select name="op" class="calc-op">
+				 <option value="plus">+</option>
+				<option value="minus">-</option>
+				<option value="multyply">*</option>
+				<option value="divide">/</option>
+				</select>
 				<input type="text" name="num2" class="calc-input" />
 				<button type="button" class="calc-calculate">=</button>
 				<!--<span class="calc-result"></span>-->
@@ -443,7 +445,7 @@
 <script src="resources/webflow.3ae7eb135.js" type="text/javascript"></script>
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-<script src="./resources/calc.js"></script>
+<script src="./resources/calculate.js"></script>
 <style>
  .calc-input {
    width: 120px;
